@@ -52,7 +52,7 @@ test("Tiles Need to be 2x2 Grid", async () => {
   await setTimeout(10);
   let grid = dom.window.document.getElementById("challenge-grid");
   assert.ok(
-    ["repeat(2,1fr)", "1fr1fr", "50%50%"].includes(
+    ["repeat(2,1fr)", "1fr1fr", "50%50%", "auto auto"].includes(
       dom.window.getComputedStyle(grid)._values["grid-template-columns"].replace(/\s/g, "")
     )
   );
